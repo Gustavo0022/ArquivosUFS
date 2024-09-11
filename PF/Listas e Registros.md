@@ -199,6 +199,7 @@ const lista2 = lista1.sort((a,b) => a-b)
 console.log(lista2)
 console.log(lista1)
 ```
+
 Ao contrário do que se espera, ambas as listas foram operadas.
 
 ```js
@@ -209,6 +210,7 @@ Ao contrário do que se espera, ambas as listas foram operadas.
 Isso ocorre porque ```lista2``` não é uma nova lista, e sim um novo "nome" para a ```lista1```. Então a lista pode ser chamada pelos dois "nomes" atribuidos a ela. Isso prova que, mesmo que a estrutura da lista em si seja imutável, o conteúdo pode ser modificado.
 
 Para evitar que isso aconteça, é possível fazer o seguinte:
+
 ### Fazer uma cópia da lista utilizando parâmetros Spread ```[...x]```
 
 ```js
@@ -217,7 +219,9 @@ const lista2 = [...lista1].sort((a,b) => a-b)
 console.log(lista2)
 console.log(lista1)
 ```
-Com o uso do parâmetro **Spread**, uma nova lista é criada e operada sem interferências na original. 
+
+Com o uso do parâmetro **Spread**, uma nova lista é criada e operada sem interferências na original.
+
 ```js 
 [1,3,4,6,10] //Lista2
 [1,4,3,10,6] //Lista1
@@ -225,25 +229,68 @@ Com o uso do parâmetro **Spread**, uma nova lista é criada e operada sem inter
 
 ### Utilizar o método ```Object.freeze()```
 
-O recurso ```Object.freeze()``` congela os itens das listas (e dos registros), retornando um erro toda vez que se tenta modificá-los. Isso garante o princípio de imutabilidade para listas requerido pelo paradigma funcional. Para acessar a lista e criar uma nova lista com ela, utiliza-se o método anterior para copiá-la.
+O recurso ```Object.freeze()``` congela os itens das listas (e dos registros), retornando a lista não modificada, mesmo que se tenha associado outro nome e modificado ela. Isso garante o princípio de imutabilidade para listas requerido pelo paradigma funcional. Para acessar a lista e criar uma nova lista com ela, utiliza-se o método anterior para copiá-la.
 
 ```js
 const lista1 = Object.freeze([1,4,3,10,6])
-const lista2 = lista1.sort() //erro
+const lista2 = lista1.sort() //retorna a lista original
 ```
 
 
 ### Uso de operações de mapeamento, filtragem e redução, etc
+
 ```js
 const lista1 = [1,4,3,10,6]
 const lista2 = lista1.map((x) => x**2)
 console.log(lista2)
 console.log(lista1)
 ```
+
 As operações com listas retomam sempre uma nova lista com os novos valores
+
 ```js
 [1,16,9,100,36] //Lista2
 [1,4,3,10,6] //Lista1
 ```
 Outra operação que cria uma nova lista é o ```slice()```, que cria uma nova lista a partir de uma seleção de um ponto inicial e um ponto final em qualquer índice da lista.
 
+```js
+const lista1 = ['Eu', 'amo', 'pizza','de','queijo']
+const lista2 = lista1.slice(2,5)
+console.log(lista2)
+console.log(lista1)
+```
+O exemplo acima retorna:
+
+```js
+[ 'pizza', 'de', 'queijo' ]
+[ 'Eu', 'amo', 'pizza', 'de', 'queijo' ]
+```
+
+### Registros
+
+No caso de registros, as opções de imutabilidade se assemelham com as listas. Aqui temos o ```Object.freeze()``` e o ```{...x}``` (Spread). Note que aqui, o parâmetro Spread utiliza chaves, indicando que um registro está sendo copiado.
+
+```js
+const cachorro = Object.freeze({
+    nome: 'Luma',
+    raça: 'Poodle',
+    idade: 6,
+    cor: 'preto',
+    peso: 7.2 
+})
+
+const cachorro2 = {...cachorro} //Spread
+
+cachorro2.nome = 'Doki'
+cachorro2.peso = 8.1
+
+console.log(cachorro2)
+console.log(cachorro)
+```
+
+O código retorna
+```js
+{ nome: 'Doki', 'raça': 'Poodle', idade: 6, cor: 'preto', peso: 8.1 }
+{ nome: 'Luma', 'raça': 'Poodle', idade: 6, cor: 'preto', peso: 7.2 }
+```
