@@ -75,9 +75,9 @@ Perceba que:
 * Caso haja apenas um item na lista, ainda assim será retornada uma nova lista com o item que satisfaz a condição.
 * Caso nenhum item da lista a ser filtrada satisfaça a condição, será retomada uma lista vazia (```[]```)
 
-#### Filtragem
+#### Redução
 
-As operações de filtragem são operações que reduzem todos os elementos da lista a um único valor baseado na função ou expressão utilizada. Também se faz uso de um **acumulador**, que aqui, soma e retoma o valor desejado ao realizar a operação de redução (como a soma de todos os itens ou a concatenação de strings)
+As operações de redução são operações que reduzem todos os elementos da lista a um único valor baseado na função ou expressão utilizada. Também se faz uso de um **acumulador**, que aqui, soma e retoma o valor desejado ao realizar a operação de redução (como a soma de todos os itens ou a concatenação de strings)
 
 ```js
 const listaString = ['The', 'Quick', 'Brown', 'Fox', 'Jumps', 'Over', 'The', 'Lazy', 'Dog']
