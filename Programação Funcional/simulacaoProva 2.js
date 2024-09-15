@@ -15,11 +15,15 @@ const inputLista = processarStringPacientes(inputStr)
 
 //2
 
-const ordenarPacientesPorIMC = (lista) => [...lista].sort((a,b) => {
+//metodo simples
+const ordenarPacientesPorIMC = (lista) => [...lista].sort((a,b) => a.imc - b.imc)
+
+//metodo complexo
+/*const ordenarPacientesPorIMC = (lista) => [...lista].sort((a,b) =>{
     if (a.imc < b.imc) return -1;
     if (a.imc > b.imc) return 1;
     return 0
-})
+}*/
 
 //3
 
