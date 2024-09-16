@@ -37,6 +37,19 @@ const maiorEmenorIMC = (lista) => {
     return {maior: pacientesOrdenados[pacientesOrdenados.length-1].nome, menor: pacientesOrdenados[0].nome} 
 }
 
+/* solução de hendrik
+
+const maiorEmenorIMC = (pacientes) => {
+  const temp = pacientes.reduce((acc, paciente) => {
+  if (paciente.imc > acc.maior.imc) acc.maior = paciente;
+  if (paciente.imc < acc.menor.imc) acc.menor = paciente;
+  return acc;
+}, { maior: pacientes[0], menor: pacientes[0] })
+  return {maior: temp.maior.nome, menor: temp.menor.nome};
+}
+
+*/
+
 //4
 
 const classificarPacientes = (lista) => {
