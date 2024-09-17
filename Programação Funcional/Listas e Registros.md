@@ -233,7 +233,7 @@ O recurso ```Object.freeze()``` congela os itens das listas (e dos registros), r
 
 ```js
 const lista1 = Object.freeze([1,4,3,10,6])
-const lista2 = lista1.sort() //retorna a lista original
+const lista2 = lista1.sort() //retorna um erro
 ```
 
 
