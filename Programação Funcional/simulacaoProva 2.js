@@ -28,10 +28,7 @@ const ordenarPacientesPorIMC = (lista) => [...lista].sort((a,b) => a.imc - b.imc
 //3
 
 const maiorEmenorIMC = (lista) => {
-    const pacientesOrdenados = [...lista].sort((a,b) => {
-        if (a.imc < b.imc) return -1;
-        if (a.imc > b.imc) return 1;
-        return 0
+    const pacientesOrdenados = [...lista].sort((a,b) => a.imc - b.imc)
     })
 
     return {maior: pacientesOrdenados[pacientesOrdenados.length-1].nome, menor: pacientesOrdenados[0].nome} 
