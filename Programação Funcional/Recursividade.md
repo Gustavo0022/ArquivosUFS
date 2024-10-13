@@ -1,5 +1,7 @@
 # Recursividade
 
+<img src="/assets/galshir-babushka.gif" height="200">
+
 ## Conceito
 
 Recursividade é o ato de resolver um problema por meio da repetição de uma mesma função, chamada de **passo indutivo**, invocada por ela mesma, até que se chegue ao chamado **caso base**
@@ -49,4 +51,33 @@ const fib = (n) => {
 ```
 
 Note que a função é chamada dentro dela mesma, e isso é um dos aspectos que caracteriza uma função recursiva. Note também que, caso não existissem casos base, a função nunca terminaria de ser executada, resultando em uma "stack overflow" ou sobrecarga de pilha.
+
+Outro exemplo é uma função de potência
+
+```js
+const potencia = (b,e) => {
+    if (e == 0) {return 1} 
+    else return b*potencia(b,e-1)
+}
+```
+
+Aqui, o caso base é o caso de o expoente ser $0$ (o resultado é $1$), e o passo indutivo é que, caso o expoente seja diferente de 0, faz-se o produto da base com a função, até que se chegue no caso base.
+
+//fazer o de mdc e o de string
+
+## Recursividade em lista
+
+Até agora, vimos a recursividade com casos que não envolvem listas, mas essa funcionalidade é extremamente útil para a manipulação de listas com o paradigma funcional.
+
+Abaixo, temos a função ```map```, implementada em JS:
+
+```js
+const lista1 = [2,3,8,10]
+const lista2 = lista1.map((x) => x**2)
+
+console.log(lista2) // retorna [4,9,64,100]
+```
+
+Como explicado no documento de <ins>Listas e registros </ins> a função ```map``` retorna uma nova lista com os elementos modificados de acordo com a função definida na sua declaração. Podemos criar uma função ```map``` com recursividade, da seguinte forma:
+
 
