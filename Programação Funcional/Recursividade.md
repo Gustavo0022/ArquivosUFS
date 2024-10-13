@@ -1,6 +1,6 @@
 # Recursividade
 
-<img src="/assets/galshir-babushka.gif" height="200">
+<img src="/assets/galshir-babushka.gif" height="400">
 
 ## Conceito
 
@@ -12,21 +12,21 @@ Já o **PASSO INDUTIVO** é o passo necessário para transitar até o caso base,
 
 Ex.: Definindo uma sequência aritmética $ \{3,5,7,9,11,13...\}$, podemos obter qualquer valor dela por meio da função recursiva a seguir
 
->$f(0) = 3 $  
+$f(0) = 3 $  
 $ f(n-1) + 2$  
 
 A primeira linha é o Caso Base (que indica que $3$ é o elemento inicial da sequência e que, se o "contador" chegar a 0, o valor será $3$ ) e a segunda é o passo indutivo (que indica que, enquanto $f(n)$ for diferente de zero, subtri-se o n em 1 e soma-se 2 ao resultado de $f(n-1)$ ). Assim, para chegar ao quarto elemento da sequência, seriam feitos a seguintes iterações:
 
 "Ida" até o caso base
 
->$f(3)$ =  
+$f(3)$ =  
 =$f(2) + 2$  
 =$f(1) + 2$  
 =$f(0)$ → 3
 
 "Volta" solucionando os passos indutivos recursivamente
 
->$f(1) + 2$ → $3 + 2 $ = 5  
+$f(1) + 2$ → $3 + 2 $ = 5  
 $f(2) + 2$ → $5 + 2$ = 7  
 $f(3) + 2$ → $7 + 2$ = 9
 
@@ -34,7 +34,7 @@ Logo, o quarto elemento da lista é $9$
 
 Outro exemplo de função recursiva é a famosa **Sequência de Fibbonacci**, que pode ser representada da seguinte forma:
 
->$f(0) = 1$       (caso base 1)  
+$f(0) = 1$       (caso base 1)  
 $f(1) = 1$        (caso base 2)  
 $f(n-1) + f(n-2)$ (passo indutivo)
 
@@ -69,6 +69,19 @@ Aqui, o caso base é o caso de o expoente ser $0$ (o resultado é $1$), e o pass
 
 Até agora, vimos a recursividade com casos que não envolvem listas, mas essa funcionalidade é extremamente útil para a manipulação de listas com o paradigma funcional.
 
+Para a recursividade em lista, é necessário **desestruturar*** a lista em dois elementos:
+* Head (ou cabeça): é o elemento a ser operado na operação recursiva atual. Geralmente, mas não para todos os casos, é o primeiro elemento da lista
+* Tail (ou cauda): é o resto da lista, em que as próximas operações recursivas ocorrerão, com um dos elementos (novamente, geralmente o primeiro) da tail sendo a head da próxima iteração recursiva.
+
+*A desestruturação de parâmetros é a separação de certos parâmetros de um objeto, uma lista ou algum outro tipo de dado.
+
+```js
+//demonstrar desestruturação e função de soma de elementos da lista
+
+```
+
+A depender da função, é possível ter duas cabeças em uma mesma operação recursiva (em uma função de comparação, por exemplo)
+
 Abaixo, temos a função ```map```, implementada em JS:
 
 ```js
@@ -80,4 +93,10 @@ console.log(lista2) // retorna [4,9,64,100]
 
 Como explicado no documento de <ins>Listas e registros </ins> a função ```map``` retorna uma nova lista com os elementos modificados de acordo com a função definida na sua declaração. Podemos criar uma função ```map``` com recursividade, da seguinte forma:
 
+```js 
+const meumap = ([x,...xs], f) => {
+    if (typeof x == 'undefined') return []
+    else return [f(x), ...meumap(xs,f)] 
+}
+```
 
