@@ -73,16 +73,48 @@ Para a recursividade em lista, é necessário **desestruturar*** a lista em dois
 * Head (ou cabeça): é o elemento a ser operado na operação recursiva atual. Geralmente, mas não para todos os casos, é o primeiro elemento da lista
 * Tail (ou cauda): é o resto da lista, em que as próximas operações recursivas ocorrerão, com um dos elementos (novamente, geralmente o primeiro) da tail sendo a head da próxima iteração recursiva.
 
-*A desestruturação de parâmetros é a separação de certos parâmetros de um objeto, uma lista ou algum outro tipo de dado.
+*A desestruturação de parâmetros é a separação de certos parâmetros de um objeto, uma lista ou algum outro tipo de dado:
 
 ```js
-//demonstrar desestruturação e função de soma de elementos da lista
+const lista = [1,2,3,5]
+const [x,...xs] = lista //desestruturação da lista, consistindo nesse caso de pegar o primeiro elemento e associá-lo à constante x, e o resto da lista associado à constante xs. Assim, x = 1 e xs = [2,3,5].
 
+console.log(x)
+console.log(xs)
+```
+Voltando à recursividade, abaixo temos uma função que retorna a soma de todos os elementos da lista:
+
+```js 
+const somaLista = ([x,...xs]) => {
+    if (typeof x == 'undefined') return 0
+    else return x + somaLista(xs)
+}
+
+console.log(somaLista([3,4,12,15])) //retorna 34
 ```
 
-A depender da função, é possível ter duas cabeças em uma mesma operação recursiva (em uma função de comparação, por exemplo)
 
-Abaixo, temos a função ```map```, implementada em JS:
+A depender da função, é possível ter duas cabeças em uma mesma operação recursiva, como no exemplo abaixo, que retorna o maior 
+
+```js
+const maior = ([x,y,...xs]) => {
+    if (typeof y == 'undefined') return x
+    else if (x>y) return maior([x,...xs])
+    else return maior([y,...xs]) 
+}
+console.log(`O maior número da lista é ${maior([3,4,12,15])}`) 
+//retorna "O maior número da lista é 15"
+```
+
+*OBS: Como é possível ver, utilizamos em praticamente todas as funções de recursividade em lista a condição ```typeof x == 'undefined'```, pois, caso a lista esteja vazia, o tipo dela é indefinido, ou ```'undefined'```. Não é possível realizar operações úteis com isso. Para facilitar o trabalho, é possível identificar se certo elemento da lista (a "cabeça") está vazio, pois se estiver, a lista está vazia (ou no caso acima, resta apenas um elemento, que é o que queremos). Assim, é possível definir uma função de uso geral:
+
+```js
+const undef = (x) => typeof x == 'undefined'
+```
+Essa função verifica se o tipo da constante selecionada é ```undefined``` e retorna um valor do tipo bool ```true``` ou ```false``` caso seja ou não seja.
+
+
+A partir da recursividade, é possível criar funções já existentes, a fim de entender como elas funcionariam no paradigma funcional. Abaixo, temos a função ```map```, implementada em JS:
 
 ```js
 const lista1 = [2,3,8,10]
@@ -94,9 +126,9 @@ console.log(lista2) // retorna [4,9,64,100]
 Como explicado no documento de <ins>Listas e registros </ins> a função ```map``` retorna uma nova lista com os elementos modificados de acordo com a função definida na sua declaração. Podemos criar uma função ```map``` com recursividade, da seguinte forma:
 
 ```js 
-const meumap = ([x,...xs], f) => {
+const meuMap = ([x,...xs], f) => {
     if (typeof x == 'undefined') return []
-    else return [f(x), ...meumap(xs,f)] 
+    else return [f(x), ...meuMap(xs,f)] 
 }
 ```
 
