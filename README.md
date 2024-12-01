@@ -1,2 +1,7 @@
 # ArquivosUFS
-Arquivos para estudar para assuntos de disciplinas da UFS
+**Bem vindo ao site de ARQUIVOS DA UFS**
+
+**Feito por Gustavo Gomes**
+
+
+
