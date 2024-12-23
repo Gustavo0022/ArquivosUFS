@@ -1,10 +1,10 @@
 # Operadores relacionais e estruturas condicionais
 
-## Operadores relcaionais
+## Operadores relacionais
 
 A linguagem C possui operadores chamados, operadores relacionais, que servem para comparar dados (variáveis, inteiros, strings, etc.).
 
-Alguns operadores relcaionais são:
+Alguns operadores relacionais são:
 
 * < (Menor que)
 * \> (Maior que)
@@ -17,7 +17,7 @@ Baseado nisso, podemos realizar operações de comparação em chamadas **estrut
 
 ## Estruturas de decisão simples
 
-As estruturas de decisão simples interrompem o fluxo de tempo de execução do programa a depender dos valores passados. Elas são representadas pelas palavras ```if``
+As estruturas de decisão simples interrompem o fluxo de tempo de execução do programa a depender dos valores passados. Elas são representadas pelas palavras ```if```
 
 ```C
 ...
