@@ -1,15 +1,15 @@
-# Conceitos Iniciais
-**Programação Imperativa em C**
+# Conceitos Iniciais - Programação Imperativa
 
-## Definição de programa
 
-Um programa é uma sequência de passos para resolver problemas
+## Programa e algoritmo
 
-O primeiro "computador" foi criado por Charles Babbage com o objetivo de calcular e corrigir rotas náuticas para evitar acidentes no mar.
+Algoritmos são sequências de passos a serem executados. Esses passos são bem descritos, sem ambiguidades, e que podem ser executados de alguma forma. Por exemplo, para calcular a soma de dois números, você toma esses dois número, processa-os de forma a somá-los, e retoma o resultado dessa soma.
 
-(Inserir foto do Babbage)
+Um programa é uma sequência de passos escrita em uma linguagem de computador para executar ações ou resolver problemas. Eles são essenciais para o funcionamento de um computador, afinal sem programas, a máquina é inútil. Seu Sistema Operacional(Windows,Linux, Mac OS ou BSD) são programas; seu aplicativo de calculadora é um programa; o navegador pelo qual você provavelmente lê isso é um programa. 
 
-Programas não podem possuir ambiguidades....
+Para a criação de programas, é necessária alguma interface entre o programador e o computador. Monitores, terminais de computador, ou impressoras para ver os comandos digitados e os resultados; dispositivos para a entrada de dados (um teclado, por exemplo); e algo que seja possível escrever esses programas de forma que o computador entenda. É aí que entram as linguagens de programação.
+
+O computador só entende instruções em binário, isto é, 0 e 1, sim ou não. É com sequências de zeros e uns que os programas rodam no computador. Mas escrever em binário (também chamado de linguagem de máquina) é trabalhoso e difícil. Por isso, foram inventadas diferentes linguagens de programação, como assembly, que, mesmo sendo mais fácil que linguagem de máquina, ainda é complicado para padrões atuais. Então, ao longo do tempo, diferentes linguagens foram construídas de forma a facilitar ainda mais a construção e a criação de programas, como COBOL, Fortran, Lisp, C, Java, entre outras. Aqui, daremos enfoque na linguagem C.
 
 
 ## Trinômio
@@ -22,13 +22,13 @@ Para o funcionamento do programa, é necessário entender o objetivo desse progr
 
 ## A linguagem C
 
-C foi criada por Denis Ritchie e (esqueci) em 1970. É uma linguagem de alto nível, mesmo que considerada por alguns como de nível médio devido ao acesso de memória. É compilada, estruturada e fortemente tipada.
+C foi criada nos Laboratórios Bell (AT&T) por Denis Ritchie e Ken Thompson em 1970. É uma linguagem de alto nível, mesmo que considerada por alguns como de nível médio devido ao acesso de memória. É compilada, estruturada e fortemente tipada.
 
 Ser uma linguagem compilada significa que o código do programa é convertido para linguagem de máquina por inteiro. Isso é diferente de linguagens interpretadas,como python, que lê o código e o converte linha a linha.
 
 ## Termos
 
-* Código fonte:
+* Código fonte: é o código do 
 * Código objeto:
 * Linkeditor:
 * Código executável:
