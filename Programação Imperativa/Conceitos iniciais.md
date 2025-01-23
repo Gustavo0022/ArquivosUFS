@@ -28,13 +28,13 @@ Ser uma linguagem compilada significa que o código do programa é convertido pa
 
 ## Termos
 
-* Código fonte: é o código do 
-* Código objeto:
-* Linkeditor:
-* Código executável:
-* Biblioteca:
-* Tempo de compilação:
-* Tempo de execução (runtime):
+* Código fonte: é o código do programa. Um exemplo é um código em C
+* Código objeto: O código objeto é o produto da compilação de um código fonte, que agora é transformado em linguagem de máquina. Compõe uma parte do executável gerado pelo compilador do C
+* Linkeditor: É o responsável por requisitar e agregar todas as partes necessárias para a execução de um programa. É o responsável por incluir as bibliotecas necessárias para compilar o problema
+* Código executável: É o produto final da compilação. É esse o arquivo que o usuário tem acesso e pode executar a lógica do programa.
+* Biblioteca: É um conjunto de instruções e funções que podem ser utilizados em diferentes programas, para diferentes propósitos
+* Tempo de compilação: É o momento em que o código fonte é lido pelo compilador. Aqui, o compilador pode indicar erros que o impedem de ser transformado em código objeto (a ausência de um ;, por exemplo).
+* Tempo de execução (runtime): Aqui é onde podem ser indicados erros ocorridos durante a execução do programa, como uma exceção de ponto flutuante.
 
 
 ## Exemplo de programa em C
@@ -70,18 +70,20 @@ As variáveis podem ser:
 * Fora de todas as funções (variáveis globais)
 * 
 
-### Tipos de variáveis
+### Tipos de dados
 
-Como indicado antes, as variáveis podem ocupar diferentes quantidades de memória a depender do tipo. Os tipos de variáveis podem ser usados para determinar a quantidade de memória ocupada e para determinar se é possível realizar operações com outras variáveis. (Ex.: uma variável de tipo int não pode realizar operações com uma variável do tipo char)
+Como indicado antes, as variáveis podem ocupar diferentes quantidades de memória a depender do tipo de dado armazenado nela. Os tipos de dados podem ser usados para determinar a quantidade de memória ocupada e para determinar se é possível realizar operações com outras variáveis. (Ex.: uma variável de tipo int não pode realizar operações com uma variável do tipo char)
 
 
-Os tipos de variáveis em C são:
-* Int: número inteiro (16 bits)
-* float: números racionais (32 bits)
-* double: números racionais (64 bits)
-* long int: número nteiro (32 bits)
-* char: valores alfanuméricos (1byte)
-* void: valor ...
+
+| Tipo |Representa      |Tamanho em bits|Tamanho em bytes|
+| :--: |    :--:        |      :--:     |    :--:        |
+|Int   | número inteiro | 16 ou 32      | 2 ou 4         |
+|float | número racional| 32            |  4             |
+|double   | número racional| 64          | 8              |
+| long int| número inteiro| 64 |        8|
+| char | valores alfanuméricos | 8| 1
+
 
 
 ## Comentários em C
@@ -90,10 +92,17 @@ Os comentários em C são feitos com ```/* comentário */```
 
 ## Operadores aritméticos
 
-Os operadores aritméticos em C são
-* -:
-* +:
-* *:
+C, assim como diversas linguagens, possui diversos operadores aritméticos, lógicos e relacionais.
+
+| aritméticos| Lógicos|Relacionais|
+|:---: |:---: |:----:|
+| + (adição)| && (AND) | == (igual a) |
+| - (subtração)|\|\| (OR) | < (menor que) |
+|* (multiplicação)|! (NOT)| >  (menor que)|
+| / (divisão)|ˆ(XOR) | != (diferente de) |
+| | | <= (menor ou igual) | 
+| | | >= (maior ou igual) |
+
 
 ## Máscaras de formatação de E/S
 
