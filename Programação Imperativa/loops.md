@@ -18,7 +18,7 @@ O código acima executa a impressão do número da variável x, e acresce 1 a es
 
 Similar ao conceito de recursividade, aqui, temos um caso base (x menor que 10) e um passo indutivo (x++), além dos comandos envolvidos.
 
-##do-while
+## do-while
 
 Diferente do ```while```, o ```do while``` testa a condição desejada ao fim do loop:
 
