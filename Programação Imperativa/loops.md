@@ -18,6 +18,19 @@ O código acima executa a impressão do número da variável x, e acresce 1 a es
 
 Similar ao conceito de recursividade, aqui, temos um caso base (x menor que 10) e um passo indutivo (x++), além dos comandos envolvidos.
 
-##while do
+##do-while
+
+Diferente do ```while```, o ```do while``` testa a condição desejada ao fim do loop:
+
+```c
+int x = 1;
+
+do{
+  printf("%d",x);
+  x++;
+}while (x < 10)
+```
+
+No exemplo acima, o código será executado uma vez **independente** da condição ser satisfeita. Após essa vez, ele testa a condição, e, enquanto for verdadeura, ele a continua executando. Quando ela for falsa, o código deixa de ser executado.
 
 ##for
