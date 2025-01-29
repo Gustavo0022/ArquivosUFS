@@ -33,4 +33,31 @@ do{
 
 No exemplo acima, o código será executado uma vez **independente** da condição ser satisfeita. Após essa vez, ele testa a condição, e, enquanto for verdadeura, ele a continua executando. Quando ela for falsa, o código deixa de ser executado.
 
-##for
+## for
+
+O ```for``` funciona como um contador. Para cada execução do código dentro do seu escopo, a variável utilizada como contador será incrementada ou decrementada.
+
+A sintaxe do for funciona da seguinte forma:
+
+```c
+
+for(contador;teste; modificação no contador){
+  comando;
+
+}
+```
+Aqui, o contador é uma variável, o teste é a condifção que será verificada para que o código continue sendo executado, e a modificação no contador é a operação realizada no contador a cada vez que o código é executado.
+
+Agora, um exemplo prático:
+
+```c
+int contador = 0;
+
+for(contador;contador< 10; contador++){
+  printf("\nO contador esta no numero %d", contador);
+}
+
+printf("\nO contador parou de crescer em %d",contador);
+```
+
+
