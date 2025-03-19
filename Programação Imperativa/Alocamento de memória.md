@@ -69,9 +69,42 @@ Também existe a função calloc, que além de permitir a indicação do número
 
 
 ```c
-
 ponteiro = calloc(3, sizeof(int)); //aloca 3 int e declara todos eles como 0
 ```
 
 Após utilizar o ponteiro, é ideal utilizar ```free(ponteiro)``` 
 
+## Alocação dinâmica de matrizes de mais de uma dimensão
+
+A forma como declaramos variáveis dinâmicas demonstrada anteriormente cria uma matriz unidimensional para o armazenamento dessas informações. Agora, poderemos criar "matrizes bidimensionais" (com uma pegadinha).
+
+Para declarar matrizes bidimensionais, podemos utilizar o seguinte:
+
+```c
+
+
+matriz = (int*) malloc(2*3*sizeof(int));
+//          ^               ^
+//          |               Alocação dos bytes necessários para o tamanho de uma "matriz" 2x3
+//         Casting do tipo
+
+//genericamente: 
+//matriz = (int*) malloc(linhas*colunas*sizeof(int));
+```
+
+Apesar de ser considerada uma matriz 3x2, não é possível utilizar
+
+```c
+
+printf("%d", matriz[1][2]);
+//genericamente,
+//printf("%d", matriz[x][y]); 
+```
+
+para chamar o elemento da 2ª linha e 3ª coluna. Em vez disso, é necessário utilizar aritmética de ponteiros:
+
+```c
+printf("%d", matriz[(1*3)+2]);
+//genericamente,
+//printf("%d", matriz[(x*colunas)+2]);
+```

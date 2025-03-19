@@ -112,3 +112,7 @@ else{
 ```
 
 Agora, ele testa a primeira condição (numero maior que 20), e se satisfeita, testa a segunda (numero maior que 30). Caso a segunda não seja satisfeita, ele retorna que o número é maior que 20, e caso nenhuma delas seja satisfeita, ele retorna que o número é menor que 20.
+
+## O switch case
+
+Além de 
