@@ -56,7 +56,7 @@ ponteiro = (int*) malloc(12); //alocamento de 12 bytes para um ponteiro com cast
 ```
 
 
-Para descobrir a quantidade de bytes necessários, existe a função ```sizeof()```
+Para descobrir a quantidade de bytes necessários, existe a função ```sizeof()```, que retorna o número de bytes utlizados para algum elemento (tipo ou struct)
 
 ```c
 ponteiro = (int*) malloc(sizeof(int)); //alocamento da quantidade de bytes necessários para uma variável int
@@ -107,4 +107,26 @@ para chamar o elemento da 2ª linha e 3ª coluna. Em vez disso, é necessário u
 printf("%d", matriz[(1*3)+2]);
 //genericamente,
 //printf("%d", matriz[(x*colunas)+2]);
+```
+
+Existe outra maneira de declarar uma matriz, dessa vez no formato convencional. Para tal, utiliza-se um **ponteiro de um ponteiro**
+
+## Alocação dinâmica de estruturas (structs)
+
+A alocação de ```structs``` funciona de forma similar ao de variáveis, utilizando malloc ou calloc:
+
+```c
+struct areaRet{
+  float altura;
+  float comprimento;
+  float area;
+}
+
+struct s_circulo *p;
+
+p = (struct s_circulo *)malloc(sizeof(struct s_circulo));
+
+
+//adicionar como acessar depois
+
 ```
