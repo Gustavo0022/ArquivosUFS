@@ -15,7 +15,8 @@
               "state": {
                 "file": "Programação Imperativa/Menu.md",
                 "mode": "source",
-                "source": false
+                "source": false,
+                "backlinks": false
               },
               "icon": "lucide-file",
               "title": "Menu"
@@ -142,13 +143,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programação Imperativa/Menu.md",
+                "file": "Programação Imperativa/Funções e Escopos.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Índice de Menu"
+              "title": "Índice de Funções e Escopos"
             }
           },
           {
@@ -181,8 +182,10 @@
   },
   "active": "6c00b879b4f47879",
   "lastOpenFiles": [
-    "Programação Imperativa/Estruturas Heterogêneas de Dados (Structs).md",
+    "README.md",
+    "Programação Imperativa/Funções e Escopos.md",
     "Programação Imperativa/Menu.md",
+    "Programação Imperativa/Estruturas Heterogêneas de Dados (Structs).md",
     "Programação Imperativa/Entrada e Saída de Arquivos.md",
     "Programação Imperativa/Ponteiros.md",
     "Programação Imperativa/Recursividade.md",
@@ -191,11 +194,9 @@
     "Programação Imperativa/Alocamento de memória.md",
     "Programação Imperativa/Conceitos iniciais.md",
     "Programação Imperativa/Matrizes nDimensionais.md",
-    "Programação Imperativa/Funções e Escopos.md",
     "Programação Orientada a Objetos/Menu.md",
     "Programação Funcional/Menu.md",
     "Programação Orientada a Objetos/Conteúdo",
-    "README.md",
     "Programação Orientada a Objetos",
     "Programação Imperativa/Apêndice - Algoritmos de ordenação.md",
     "Programação Imperativa/Operadores relacionais e condicionais.md",

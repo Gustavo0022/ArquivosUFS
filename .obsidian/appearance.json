@@ -1,4 +1,6 @@
 {
   "accentColor": "#2961d1",
-  "cssTheme": ""
+  "cssTheme": "",
+  "nativeMenus": false,
+  "theme": "obsidian"
 }

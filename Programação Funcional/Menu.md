@@ -1,6 +1,6 @@
 #PF 
 
-1. [[Conceitos Básicos]] 
-2. [[Listas e Registros]]
-3. [[Recursividade]] 
+1. [Conceitos Básicos](Conceitos%20Básicos.md) 
+2. [Listas e Registros](Listas%20e%20Registros.md)
+3. [Recursividade](Recursividade.md) 
 
