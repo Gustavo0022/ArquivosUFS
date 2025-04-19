@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programação Imperativa/Alocamento de memória.md",
+                "file": "Programação Imperativa/Estruturas Heterogêneas de Dados (Structs).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Alocamento de memória"
+              "title": "Estruturas Heterogêneas de Dados (Structs)"
             }
           }
         ]
@@ -192,20 +192,20 @@
   },
   "active": "6c00b879b4f47879",
   "lastOpenFiles": [
-    "Programação Imperativa/Conceitos iniciais.md",
-    "Programação Imperativa/Menu.md",
-    "Programação Imperativa/Strings.md",
-    "Programação Imperativa/Recursividade.md",
-    "Programação Imperativa/Operadores relacionais e condicionais.md",
-    "Programação Imperativa/Alocamento de memória.md",
-    "Programação Imperativa/Matrizes nDimensionais.md",
-    "Programação Imperativa/Estruturas Heterogêneas de Dados (Structs).md",
     "Programação Imperativa/Entrada e Saída de Arquivos.md",
+    "Programação Imperativa/Menu.md",
     "Programação Imperativa/Apêndice - Algoritmos de ordenação.md",
     "Programação Imperativa/Ponteiros.md",
     "Programação Imperativa/Funções e Escopos.md",
     "Programação Imperativa/Estruturas de Repetição.md",
     "Programação Imperativa/Vetores(Arrays).md",
+    "Programação Imperativa/Strings.md",
+    "Programação Imperativa/Recursividade.md",
+    "Programação Imperativa/Operadores relacionais e condicionais.md",
+    "Programação Imperativa/Matrizes nDimensionais.md",
+    "Programação Imperativa/Conceitos iniciais.md",
+    "Programação Imperativa/Alocamento de memória.md",
+    "Programação Imperativa/Estruturas Heterogêneas de Dados (Structs).md",
     "Sem título.canvas",
     "README.md",
     "Programação Funcional/Recursividade.md",
