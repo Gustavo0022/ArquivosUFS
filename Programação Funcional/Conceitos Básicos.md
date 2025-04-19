@@ -1,5 +1,7 @@
 #PF 
 
+[<- Voltar](./Menu.md)
+
 ## Definição e aplicação de uma função
 
 Uma função é definida utilizando a palavra ```function``` ou a notação arrow (como demonstrado em _funções como expressões_).

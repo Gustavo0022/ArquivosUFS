@@ -1,4 +1,7 @@
 #PI
+
+[<- Menu inicial](/README.md)
+
 # Menu de navegação
 
 | Aula | Nome                                                                                                |
