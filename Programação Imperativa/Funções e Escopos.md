@@ -1,3 +1,5 @@
+#PI 
+[[Programação Imperativa/Menu|<- Voltar]]
 ## Funções
 
 Apesar de já usarmos funções desde quando começamos a programar, é possível também criarmos nossas próximas funções.

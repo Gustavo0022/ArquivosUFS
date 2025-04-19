@@ -1,4 +1,5 @@
-
+#PI 
+[[Programação Imperativa/Menu|<- Voltar]]
 Ponteiros são tipos de dados que armazenam endereços de memória.
 
 ## Declaração de variáveis

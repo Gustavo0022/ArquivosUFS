@@ -1,4 +1,6 @@
 #PI 
+[[Programação Imperativa/Menu|<- Voltar]]
+
 ## O que são strings?
 
 Strings são cadeias de caracteres utilizadas para a entrada e saída de texto no programa. Um exemplo de string é ```"Eu amo macarrão com queijo"```. Note que a frase está entre aspas, pois strings sempre são passadas com aspas duplas. Algumas linguagens, como Python, suportam a passagem de strings com aspas simples, mas no C, não.

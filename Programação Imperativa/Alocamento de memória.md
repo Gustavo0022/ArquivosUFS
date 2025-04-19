@@ -1,5 +1,5 @@
 #PI 
-
+[[Programação Imperativa/Menu|<- Voltar]]
 ## Endereços de memória
 
 Toda variável é situada em um endereço (uma posição) da memória. Quando queremos nos referir a um endereço de memória relativo a algo, utilizamos o ```&```, como no scanf.
