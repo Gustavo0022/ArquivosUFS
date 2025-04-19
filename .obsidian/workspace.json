@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programação Funcional/Menu.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Menu"
+              "title": "README"
             }
           }
         ]
@@ -192,11 +192,11 @@
   },
   "active": "6c00b879b4f47879",
   "lastOpenFiles": [
+    "Programação Imperativa/Menu.md",
+    "Programação Funcional/Menu.md",
     "README.md",
     "Programação Funcional/Listas e Registros.md",
     "Programação Funcional/Listas e Registros.pdf",
-    "Programação Funcional/Menu.md",
-    "Programação Imperativa/Menu.md",
     "Programação Imperativa/Estruturas Heterogêneas de Dados (Structs).md",
     "Programação Imperativa/Entrada e Saída de Arquivos.md",
     "Programação Imperativa/Apêndice - Algoritmos de ordenação.md",

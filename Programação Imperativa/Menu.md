@@ -1,6 +1,6 @@
 #PI
 
-[<- Menu inicial](README.md)
+[<- Menu inicial](/README.md)
 
 # Menu de navegação
 
