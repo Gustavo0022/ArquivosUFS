@@ -1,5 +1,5 @@
 #PI 
-[[Programação Imperativa/Menu|<- Voltar]]
+[<- Voltar](Programação%20Imperativa/Menu.md)
 ## Operadores relacionais
 
 A linguagem C possui operadores chamados, operadores relacionais, que servem para comparar dados (variáveis, inteiros, strings, etc.).

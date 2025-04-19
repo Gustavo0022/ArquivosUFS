@@ -1,5 +1,5 @@
 #PI 
-[[Programação Imperativa/Menu|<- Voltar]]
+[<- Voltar](Programação%20Imperativa/Menu.md)
 Ponteiros são tipos de dados que armazenam endereços de memória.
 
 ## Declaração de variáveis

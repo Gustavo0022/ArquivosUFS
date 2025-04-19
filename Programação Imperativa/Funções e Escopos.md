@@ -1,5 +1,5 @@
 #PI 
-[[Programação Imperativa/Menu|<- Voltar]]
+[<- Voltar](Programação%20Imperativa/Menu.md)
 ## Funções
 
 Apesar de já usarmos funções desde quando começamos a programar, é possível também criarmos nossas próximas funções.

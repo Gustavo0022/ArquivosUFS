@@ -1,5 +1,5 @@
 #PI 
-[[Programação Imperativa/Menu|<- Voltar]]
+[<- Voltar](Programação%20Imperativa/Menu.md)
 ## Programa e algoritmo
 
 Algoritmos são sequências de passos a serem executados. Esses passos são bem descritos, sem ambiguidades, e que podem ser executados de alguma forma. Por exemplo, para calcular a soma de dois números, você toma esses dois número, processa-os de forma a somá-los, e retoma o resultado dessa soma.
