@@ -1,0 +1,1 @@
+Um algoritmo de ordenação possibilita a organização 

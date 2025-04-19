@@ -1,4 +1,3 @@
-# Ponteiros
 
 Ponteiros são tipos de dados que armazenam endereços de memória.
 
@@ -9,7 +8,6 @@ Em C, o operador ```&``` retorna um endereço de memória:
 ```c
 scanf("%d",&num);
 //         ^
-//         |
 //   Operador ******* 
 
 

@@ -1,4 +1,4 @@
-# Matrizez com mais de uma dimensão
+#PI 
 
 Matrizes em C podem ser declaradas com qualquer quantidade de dimensões
 

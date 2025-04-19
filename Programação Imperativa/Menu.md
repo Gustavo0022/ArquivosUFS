@@ -1,0 +1,15 @@
+#PI
+
+1. [[Conceitos iniciais]]
+2. [[Operadores relacionais e condicionais]]
+3. [[Strings]]
+4. [[Estruturas de Repetição]]
+5. [[Vetores(Arrays)]]
+6. [[Matrizes nDimensionais]] 
+7. [[Estruturas Heterogêneas de Dados (Structs)]]
+8. [[Funções e Escopos]]
+9. [[Programação Imperativa/Recursividade|Recursividade]]
+10. [[Ponteiros]]
+11. [[Alocamento de memória]]
+12. [[Entrada e Saída de Arquivos]]
+13. [[Apêndice - Algoritmos de ordenação]]
