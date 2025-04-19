@@ -293,6 +293,6 @@ console.log(cachorro)
 
 O código retorna
 ```js
-{ nome: 'Doki', 'raça': 'Poodle', idade: 6, cor: 'preto', peso: 8.1 }
+{ nome: 'Doki', 'raça': 'Poodle', idade: 6, cor: 'Amarelo', peso: 8.1 }
 { nome: 'Luma', 'raça': 'Poodle', idade: 6, cor: 'preto', peso: 7.2 }
 ```
