@@ -1,1 +1,13 @@
 site_name: Arquivos da UFS
+site_author: Gustavo Gomes
+site_url: https://gustavo0022.github.io/Apostilas-Programacao/	
+
+
+theme:
+  name: mkdocs
+  highlightjs: true
+  hljs_languages:
+    - yaml
+
+
+
